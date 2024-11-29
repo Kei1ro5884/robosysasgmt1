@@ -31,7 +31,7 @@ $ cd robosysasgmt1
 $ chmod +x required_score
 ```
 
-####### 実行例
+## 実行例
 
 実行
 ```
