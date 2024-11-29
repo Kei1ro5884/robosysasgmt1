@@ -1,17 +1,14 @@
-# robosysasgmt1
-ロボットシステム学課題１
-
-## required_scoreコマンド
+# required_scoreコマンド
 [![test](https://github.com/Kei1ro5884/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/Kei1ro5884/robosys2024/actions/workflows/test.yml)
 
-### 必要なソフトウェア
+## 必要なソフトウェア
 - Pyhon
   -テスト済みバージョン:3.7~3.11
 
-#### テスト環境
+## テスト環境
 - Ubuntu 22.04 LTS
 
-##### 概要
+## 概要
 
 -このコマンドは学生向けのもので、期末試験前までの学生の成績から期末試験で何点取れば単位取得(60点以上)できるかを計算します。
 
@@ -19,7 +16,7 @@
 
 -ユーザーが中間試験やレポートなどを合わせた期末試験前の点数と、全体の成績に期末試験が占める割合を入力することで、何点取れば単位取得できるかを出力します。
 
-###### 使用方法
+## 使用方法
 
 当リポジトリのclone
 ```
@@ -55,10 +52,10 @@ $ ./required_score
 期末試験の成績割合を入力してください (0〜100): 30
 残念ながら、期末試験で満点を取っても単位取得はできません。
 ```
-######## ライセンス
+## ライセンス
 このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 
-######### クレジット
+## クレジット
 
 このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
      [ryuichiueda/my_slides robosys_2024](https://github.com/ryuichiueda/slides_marp.git)
