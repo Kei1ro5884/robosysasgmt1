@@ -20,19 +20,19 @@
 
 ## 使用方法
 
-当リポジトリのclone
+- 当リポジトリのclone
 ```
 $ git clone https://github.com/Kei1ro5884/robosysasgmt1.git
 ```
-ディレクトリに移動
+- ディレクトリに移動
 ```
 $ cd robosysasgmt1
 ```
-実行権限の付与
+- 実行権限の付与
 ```
 $ chmod +x finalexam_required_score
 ```
-コマンドを実行する際、以下の形式でスペース区切りで値を入力します
+- コマンドを実行する際、以下の形式でスペース区切りで値を入力します
 ```
 $ echo <期末試験前までの得点> <期末試験の成績割合> | ./finalexam_required_score
 ```

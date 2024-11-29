@@ -2,12 +2,14 @@
 # SPDX-FileCopyrightText: 2024 Keiichiro Kobayashi
 # SPDX-License-Identifier: BSD-3-Clause
 
+import sys
+
 def main():
     try:
         # ユーザー入力 (スペース区切り)
         inputs = input().strip().split()
         if len(inputs) != 2:
-            return
+            sys.exit(1)
 
         # 入力値の変換
         current_score = float(inputs[0])  # 期末試験前までの得点
@@ -15,7 +17,7 @@ def main():
 
         # 入力チェック
         if not (0 <= current_score <= 100) or not (0 < finalexam_rate <= 100):
-            return
+            sys.exit(1)
 
         # 必要得点の計算
         required_score = (60 - current_score) / (finalexam_rate / 100)
@@ -29,7 +31,7 @@ def main():
             print(round(required_score, 2))  # 必要得点を小数点第2位まで表示
 
     except ValueError:
-        return
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
