@@ -1,4 +1,4 @@
-# required_scoreコマンド
+# finalexam_required_scoreコマンド
 [![test](https://github.com/Kei1ro5884/robosysasgmt1/actions/workflows/test.yml/badge.svg)](https://github.com/Kei1ro5884/robosysasgmt1/actions/workflows/test.yml)
 
 ## 必要なソフトウェア
@@ -30,11 +30,11 @@ $ cd robosysasgmt1
 ```
 -実行権限の付与
 ```
-$ chmod +x required_score
+$ chmod +x finalexam_required_score
 ```
 -実行
 ```
-$ ./required_score
+$ ./finalexam_required_score
 ```
 -コマンドを実行する際、以下の形式でスペース区切りで値を入力します
 ```
@@ -44,19 +44,16 @@ $ ./required_score
 ## 実行例
 
 ```
-$ ./required_score
-50 50
+$ echo 50 50 | ./finalexam_required_score
 20.0
 
-$ ./required_score
-30 10
+$ echo 30 10 | ./finalexam_required_score
 NaN
 
-$ ./required_score
-80 30
+$ echo 80 30 | ./finalexam_required_score
 0.0
 ```
 
 ## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
-- @2024 Keiichiro Kobayashi
+- ©2024 Keiichiro Kobayashi
