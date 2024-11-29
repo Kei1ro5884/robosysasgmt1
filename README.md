@@ -32,13 +32,9 @@ $ cd robosysasgmt1
 ```
 $ chmod +x finalexam_required_score
 ```
--実行
-```
-$ ./finalexam_required_score
-```
 -コマンドを実行する際、以下の形式でスペース区切りで値を入力します
 ```
-<期末試験前までの得点> <期末試験の成績割合>
+$ echo <期末試験前までの得点> <期末試験の成績割合> | ./finalexam_required_score
 ```
 
 ## 実行例
