@@ -4,31 +4,33 @@
 
 def main():
     try:
-        # ユーザー入力
-        current_score = float(input("期末試験前までの得点を入力してください (0〜100): "))
-        finalexam_rate = float(input("期末試験の成績割合を入力してください (0〜100): "))
+        # ユーザー入力 (スペース区切り)
+        inputs = input().strip().split()
+        if len(inputs) != 2:
+            return
+
+        # 入力値の変換
+        current_score = float(inputs[0])  # 期末試験前までの得点
+        finalexam_rate = float(inputs[1])  # 期末試験の成績割合
 
         # 入力チェック
-        if not (0 <= current_score <= 100):
-            print("現在の得点は0〜100の範囲で入力してください。")
-            return
-        if not (0 < finalexam_rate <= 100):
-            print("期末試験の成績割合は0〜100の範囲で入力してください。")
+        if not (0 <= current_score <= 100) or not (0 < finalexam_rate <= 100):
             return
 
-        # 計算
+        # 必要得点の計算
         required_score = (60 - current_score) / (finalexam_rate / 100)
 
         # 結果出力
         if required_score > 100:
-            print("残念ながら、期末試験で満点を取っても単位取得はできません。")
+            print("NaN")  # 単位取得不可の場合
         elif required_score < 0:
-            print("おめでとうございます！すでに単位取得が確定しています。")
+            print(0.0)  # すでに単位取得確定の場合
         else:
-            print("単位取得には期末試験で少なくとも{:.2f}点が必要です。".format(required_score))
+            print(round(required_score, 2))  # 必要得点を小数点第2位まで表示
 
     except ValueError:
-        print("数値を正しく入力してください。")
+        return
 
 if __name__ == "__main__":
     main()
+

@@ -2,7 +2,7 @@
 [![test](https://github.com/Kei1ro5884/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/Kei1ro5884/robosys2024/actions/workflows/test.yml)
 
 ## 必要なソフトウェア
-- Pyhon
+- Python
   -テスト済みバージョン:3.7~3.11
 
 ## テスト環境
