@@ -1,5 +1,5 @@
 # required_scoreコマンド
-[![test](https://github.com/Kei1ro5884/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/Kei1ro5884/robosys2024/actions/workflows/test.yml)
+[![test](https://github.com/Kei1ro5884/robosysasgmt1/actions/workflows/test.yml/badge.svg)](https://github.com/Kei1ro5884/robosysasgmt1/actions/workflows/test.yml)
 
 ## 必要なソフトウェア
 - Python
@@ -16,47 +16,47 @@
 
 -ユーザーが中間試験やレポートなどを合わせた期末試験前の点数と、全体の成績に期末試験が占める割合を入力することで、何点取れば単位取得できるかを出力します。
 
+-単位取得不可の場合は、NaNが出力され、既に単位取得確定の場合は0.0が出力されます。
+
 ## 使用方法
 
-当リポジトリのclone
+-当リポジトリのclone
 ```
 $ git clone https://github.com/Kei1ro5884/robosysasgmt1.git
 ```
-ディレクトリに移動
+-ディレクトリに移動
 ```
 $ cd robosysasgmt1
 ```
-実行権限の付与
+-実行権限の付与
 ```
 $ chmod +x required_score
+```
+-実行
+```
+$ ./required_score
+```
+-コマンドを実行する際、以下の形式でスペース区切りで値を入力します
+```
+<期末試験前までの得点> <期末試験の成績割合>
 ```
 
 ## 実行例
 
-実行
 ```
 $ ./required_score
-```
-実行例
-```
+50 50
+20.0
+
 $ ./required_score
-期末試験前までの得点を入力してください (0〜100): 20
-期末試験の成績割合を入力してください (0〜100): 60
-単位取得には期末試験で少なくとも66.67点が必要です。
-$./required_score
-期末試験前までの得点を入力してください (0〜100): 70
-期末試験の成績割合を入力してください (0〜100): 40
-おめでとうございます！すでに単位取得が確定しています。
+30 10
+NaN
+
 $ ./required_score
-期末試験前までの得点を入力してください (0〜100): 10
-期末試験の成績割合を入力してください (0〜100): 30
-残念ながら、期末試験で満点を取っても単位取得はできません。
+80 30
+0.0
 ```
+
 ## ライセンス
 このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 
-## クレジット
-
-このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
-     [ryuichiueda/my_slides robosys_2024](https://github.com/ryuichiueda/slides_marp.git)
-© 2024 Keiichiro Kobayashi
